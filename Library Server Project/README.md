@@ -96,9 +96,6 @@ After configuration, the following tests were performed to ensure proper functio
 ---
 
 ## Author
-This project was completed by [Your Name] as part of a library server setup and configuration assignment.
+This project was completed by Elvis Haveriku, Achraf Taki and Hamza Abdooh as part of a library server setup and configuration assignment.
 
----
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.

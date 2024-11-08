@@ -57,5 +57,5 @@ Feel free to connect with me to discuss tech and cybersecurity!
 
 ---
 
-## License
-This repository is open-source and available under the MIT License.
+## Until the next chapter....
+Elvis Haveriku

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Hackers Poulette</title>
+</head>
+
+<body>
+    <h1>Contact Technical Support</h1>
+
+    <!-- Contact form starts -->
+    <form method="post">
+        <!-- First Name Field -->
+        <label for="first_name">First Name:</label>
+        <input type="text" name="first_name" id="first_name" 
+               value="{{ form.get('first_name', '') | e }}" required>
+        <span style="color: red;">{{ errors.get('first_name', '') | e }}</span>
+        <br>
+
+        <!-- Last Name Field -->
+        <label for="last_name">Last Name:</label>
+        <input type="text" name="last_name" id="last_name" 
+               value="{{ form.get('last_name', '') | e }}" required>
+        <span style="color: red;">{{ errors.get('last_name', '') | e }}</span>
+        <br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" 
+               value="{{ form.get('email', '') | e }}" required>
+        <span style="color: red;">{{ errors.get('email', '') | e }}</span>
+        <br>
+
+        <!-- Country Selection -->
+        <label for="country">Country:</label>
+        <select name="country" id="country" required>
+            <option value="USA" {% if form.get('country') == 'USA' %}selected{% endif %}>USA</option>
+            <option value="Canada" {% if form.get('country') == 'Canada' %}selected{% endif %}>Canada</option>
+            <option value="UK" {% if form.get('country') == 'UK' %}selected{% endif %}>UK</option>
+        </select>
+        <span style="color: red;">{{ errors.get('country', '') | e }}</span>
+        <br>
+
+        <!-- Gender Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="M" id="gender_m" 
+               {% if form.get('gender') == 'M' %}checked{% endif %} required>
+        <label for="gender_m">Male</label>
+        <input type="radio" name="gender" value="F" id="gender_f" 
+               {% if form.get('gender') == 'F' %}checked{% endif %} required>
+        <label for="gender_f">Female</label>
+        <span style="color: red;">{{ errors.get('gender', '') | e }}</span>
+        <br>
+
+        <!-- Subject Checkboxes -->
+        <label>Subject:</label>
+        <input type="checkbox" name="subject" value="Repair" id="subject_repair" 
+               {% if 'Repair' in form.get('subject', '').split(',') %}checked{% endif %}>
+        <label for="subject_repair">Repair</label>
+        <input type="checkbox" name="subject" value="Order" id="subject_order" 
+               {% if 'Order' in form.get('subject', '').split(',') %}checked{% endif %}>
+        <label for="subject_order">Order</label>
+        <input type="checkbox" name="subject" value="Others" id="subject_others" 
+               {% if 'Others' in form.get('subject', '').split(',') %}checked{% endif %}>
+        <label for="subject_others">Others</label>
+        <br>
+
+        <!-- Message Field -->
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" required>{{ form.get('message', '') | e }}</textarea>
+        <span style="color: red;">{{ errors.get('message', '') | e }}</span>
+        <br>
+
+        <!-- Honeypot Field (Anti-spam technique) Normaly the name should not be "honeypot"-->
+        <input type="text" name="honeypot" id="honeypot" hidden>
+        <br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+    <!-- Contact form ends -->
+</body>
+
+</html>

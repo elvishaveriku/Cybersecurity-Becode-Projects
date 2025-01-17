@@ -73,6 +73,13 @@ This project sets up an Ubuntu-based library server to provide network services,
   ssh user@192.168.56.1
   ```
 
+
+### 6. System Monitoring Tool
+
+On the system_monitoring_tool folder you will find a Bash script that is designed to monitor the performance and health of the Linux server.
+It displays system metrics and service statuses on a dynamic terminal-based dashboard and sends email notifications for critical resource thresholds.
+The script logs all output into a dated CSV file for reference and troubleshooting.
+
 ---
 
 ## Testing and Validation

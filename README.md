@@ -28,22 +28,22 @@ Each module will be represented by projects that demonstrate practical knowledge
 ---
 
 ## Projects 📂
-As I progress through the course, I’ll add projects to this repository. Here’s a look at what you can expect:
+As I progress through the course, I’ll add projects to this repository. Here’s a look at what is available until now:
 
-1. **Basic Security Configurations** 🛠️
-   - Initial setups for secure systems, including firewall rules, user permissions, and SSH configurations.
+1. **[Cisco Packet Tracer Project](https://github.com/elvishaveriku/Cybersecurity-Becode-Projects/tree/main/Packet_Tracer_Project)** 🛠️
+   - Developing a secure network infrastructure plan within Cisco Packet Tracer.
+     
+2. **[Linux Server Project](https://github.com/elvishaveriku/Cybersecurity-Becode-Projects/tree/main/Linux_Server_Project)** 🔍
+   - Setting up an Ubuntu-based server to provide network services, web hosting, and backups for a local library.
 
-2. **Network Design & Security** 🌐
-   - Secure network design projects using tools like Cisco Packet Tracer, covering VLANs, ACLs, and network segmentation.
+3. **[Windows AD Server Project](https://github.com/elvishaveriku/Cybersecurity-Becode-Projects/tree/main/Windows_Server_Project)** 🌐
+   - Deploying and configuring a secure Windows Server 2022 environment with Active Directory and essential server roles.
 
-3. **Vulnerability Assessments** 🔍
-   - Discovering and assessing vulnerabilities in systems and applications.
+4. **[Phishing Website Project](https://github.com/elvishaveriku/Cybersecurity-Becode-Projects/tree/main/Phishing_Website_Project)** 🕵️‍♂️
+   - This project serves as an example on how to gather user information through a malicious web page login form that saves user data into a local text file.
 
-4. **Penetration Testing Exercises** 🕵️‍♂️
-   - Simulated attack scenarios to test defenses, including exploit testing and mitigation.
-
-5. **Incident Response** 🚨
-   - Handling simulated security incidents to learn and apply best practices for response and recovery.
+5. **[Flask Contact Form Project](https://github.com/elvishaveriku/Cybersecurity-Becode-Projects/tree/main/Flask_Project)** 🚨
+   - This project implements a web-based contact form using the Flask framework in Python. It features sanitization, validation and feedback.
 
 ---
 
@@ -58,4 +58,4 @@ Feel free to connect with me to discuss tech and cybersecurity!
 ---
 
 ## Until the next chapter....
-Elvis Haveriku
+[Elvis Haveriku](https://elvishaveriku.github.io/)

@@ -80,7 +80,7 @@ In this repository you will find a document with a walkthrough of all the config
 
 #### **4.3 DHCP**
 - Install and configure DHCP for automatic IP assignment.
-- Integrate DHCP with Active Directory for dynamic DNS updates (optional).
+- Integrate DHCP with Active Directory for dynamic DNS updates.
 
 ---
 
